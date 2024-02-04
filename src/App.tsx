@@ -1,11 +1,11 @@
 
-import Button from "./components/Button_without_ref";
+import Button from "./components/Button_event_handler";
 
 function App() { 
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button type="button" autoFocus={true} variant="primary"/>
+      <Button />
     </main>
   );
 }
