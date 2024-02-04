@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      <Button />
+      <Button fontSize={20} title="Anjas" />
     </>
   )
 }

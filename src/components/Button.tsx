@@ -1,25 +1,22 @@
-import React from "react";
+// const ExampleComponent: React.FC<> = () => {
+//   //
+// }
 
-// let url = "https://www.google.com";
+type ButtonProps = {
+  title: string;
+  fontSize: number;
+  round?: boolean;
+};
 
-// url = 5;
-
-// console.log(url);
-
-function convertCurrency(amount: number, currency: string): number {
-  console.log(currency);
-  return amount;
-}
-
-console.log(convertCurrency(100, "USD"));
-
-export default function Button() {
+export default function Button({ title, fontSize, round }: ButtonProps) {
   return (
     <button
       className="bg-blue-600 text-white rounded-md py-2 px-1"
       type="button"
     >
-      Button
+      {title}
+      {fontSize}
+      {round}
     </button>
   );
 }
