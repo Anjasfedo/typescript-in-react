@@ -5,7 +5,7 @@ function App() {
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button type="button" autoFocus={true}/>
+      <Button type="button" autoFocus={true} variant="primary"/>
     </main>
   );
 }

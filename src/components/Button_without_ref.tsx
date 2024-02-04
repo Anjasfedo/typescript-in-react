@@ -1,11 +1,18 @@
-// Type can define all data type
-// type ButtonProps = {
-//   type: "submit" | "reset" | "button";
-//   autoFocus?: boolean;
+
+interface Variant {
+  variant?: "primary" | "secondary"
+}
+
+interface ButtonProps extends Variant {
+  restssss: React.ComponentPropsWithoutRef<"button">
+}
+
+// type Variant = {
+//   variant: "primary" | "secondary";
 // };
 
-type ButtonProps = React.ComponentPropsWithoutRef<"button">
+// type ButtonProps = React.ComponentPropsWithoutRef<"button"> & Variant;
 
-export default function Button({ ...rest }: ButtonProps) {
-  return <button {...rest}>Click</button>;
+export default function Button({ variant, ...rest }: ButtonProps) {
+  return <button {...rest}>{variant}</button>;
 }
