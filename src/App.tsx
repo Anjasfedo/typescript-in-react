@@ -1,13 +1,11 @@
-import { useState } from "react";
-import Button from "./components/Button_usestate";
 
-function App() {
+import Button from "./components/Button_aliases_interface";
 
-  const [count, setCount] = useState(0)  
+function App() { 
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button setCount={setCount} count={count}/>
+      <Button />
     </main>
   );
 }
