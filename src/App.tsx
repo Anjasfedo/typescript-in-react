@@ -1,16 +1,14 @@
-import Button from "./components/Button_function";
+import Button from "./components/Button_children_jsxelement";
 
 function App() {
 
-  const onClick = () => {};
-
-  const onDbClick = (text: string): number => {
-    return 5
-  }
+  const icon = <i></i>
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button onClick={onClick} onDbClick={onDbClick} />
+      <Button>
+        {icon}
+      </Button>
     </main>
   );
 }
