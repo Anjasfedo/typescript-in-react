@@ -1,14 +1,13 @@
-import Button from "./components/Button_children_jsxelement";
+import { useState } from "react";
+import Button from "./components/Button_usestate";
 
 function App() {
 
-  const icon = <i></i>
+  const [count, setCount] = useState(0)  
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button>
-        {icon}
-      </Button>
+      <Button setCount={setCount} count={count}/>
     </main>
   );
 }
