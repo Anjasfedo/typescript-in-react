@@ -2,15 +2,8 @@
 //   //
 // }
 
-type Colors = "red" | "green" | "blue";
-
 type ButtonProps = {
-  style: {
-    backgroundColor: Colors;
-    fontSize: number;
-    pillShape?: boolean;
-    textColor: Colors;
-  };
+  style: React.CSSProperties
 };
 
 export default function Button({style}: ButtonProps) {

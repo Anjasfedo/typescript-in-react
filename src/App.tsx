@@ -7,8 +7,7 @@ function App() {
         style={{
           backgroundColor: "blue",
           fontSize: 20,
-          textColor: "green",
-          pillShape: true,
+          color: "cyan"
         }}
       />
     </>
