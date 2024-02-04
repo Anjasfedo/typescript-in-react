@@ -1,14 +1,16 @@
-import Button from "./components/Button_record";
+import Button from "./components/Button_function";
 
 function App() {
+
+  const onClick = () => {};
+
+  const onDbClick = (text: string): number => {
+    return 5
+  }
+
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button borderRadius={{
-        "topLeft": 5,
-        "topRight": 5,
-        "bottomLeft": 10,
-        "bottomRight": 10
-      }} />
+      <Button onClick={onClick} onDbClick={onDbClick} />
     </main>
   );
 }
