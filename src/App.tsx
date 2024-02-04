@@ -1,16 +1,15 @@
-import Button from "./components/Button_style.tsx";
+import Button from "./components/Button_record";
 
 function App() {
   return (
-    <>
-      <Button
-        style={{
-          backgroundColor: "blue",
-          fontSize: 20,
-          color: "cyan"
-        }}
-      />
-    </>
+    <main className="min-h-screen flex justify-center items-center">
+      <Button borderRadius={{
+        "topLeft": 5,
+        "topRight": 5,
+        "bottomLeft": 10,
+        "bottomRight": 10
+      }} />
+    </main>
   );
 }
 
