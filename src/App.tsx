@@ -1,14 +1,15 @@
-import Button from "./components/Button.tsx";
+import Button from "./components/Button_style.tsx";
 
 function App() {
   return (
     <>
       <Button
-        fontSize={20}
-        title="anjas"
-        textColor="blue"
-        padding={[1, 2, 3, 4]}
-        margin={[1, 2, 3, 4]}
+        style={{
+          backgroundColor: "blue",
+          fontSize: 20,
+          textColor: "green",
+          pillShape: true,
+        }}
       />
     </>
   );
