@@ -1,11 +1,13 @@
 
-import Button from "./components/Button_event_handler";
+import { useState } from "react";
+import Button from "./components/Button_usestate";
 
 function App() { 
+  const [count, setcount] = useState(0)
 
   return (
     <main className="min-h-screen flex justify-center items-center">
-      <Button />
+      <Button count={count} setCount={setcount} />
     </main>
   );
 }
