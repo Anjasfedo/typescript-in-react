@@ -1,0 +1,1 @@
+// Declaration file, to declare type of third party library
